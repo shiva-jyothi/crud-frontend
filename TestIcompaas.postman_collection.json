@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "0a990107-bba8-420f-8e88-083311dc9da2",
+		"name": "TestIcompaas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8593266",
+		"_collection_link": "https://neurolearn.postman.co/workspace/aws-project~d69517bf-f432-4d0f-babd-7fac8312ae21/collection/8593266-0a990107-bba8-420f-8e88-083311dc9da2?action=share&source=collection_link&creator=8593266"
+	},
+	"item": [
+		{
+			"name": "post request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test@example.com\",\r\n  \"first_name\": \"test first name\",\r\n  \"last_name\": \"test last name\",\r\n  \"password_hash\": \"hashit\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://yonst2cr18.execute-api.us-east-2.amazonaws.com/Test1/users",
+					"protocol": "https",
+					"host": [
+						"yonst2cr18",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Test1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://yonst2cr18.execute-api.us-east-2.amazonaws.com/Test1/users?email=test@example.com",
+					"protocol": "https",
+					"host": [
+						"yonst2cr18",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Test1",
+						"users"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "test@example.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_name\": \"test first name updated\",\r\n  \"last_name\": \"test last name updated \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://yonst2cr18.execute-api.us-east-2.amazonaws.com/Test1/users?email=test@example.com",
+					"protocol": "https",
+					"host": [
+						"yonst2cr18",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Test1",
+						"users"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "test@example.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://yonst2cr18.execute-api.us-east-2.amazonaws.com/Test1/users?email=test@example.com",
+					"protocol": "https",
+					"host": [
+						"yonst2cr18",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Test1",
+						"users"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "test@example.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
